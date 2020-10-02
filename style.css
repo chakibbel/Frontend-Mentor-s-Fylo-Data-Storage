@@ -1,0 +1,146 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    background-image: url(images/bg-mobile.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    
+
+}
+#top-content {
+    width: 320px;
+    margin: 0 auto;
+    height: 200px;
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 5% 50% 5% 5%;
+    transform: translateY(55%);
+}
+#logo {
+   margin: 15% 0 0 10%;
+}
+#icons-div {
+    margin-left: 30px;
+    margin-top: 20px;    
+}
+.icon {
+    width: 20px;
+    height: 20px;
+    padding: 12px;
+    margin-right: 15px;
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 15%;
+} 
+#bottom-content {
+    width: 320px;
+    height: 150px;
+    margin: 20px auto;
+    padding-top: 40px;
+    border-radius: 5%;
+    background-color: hsl(228, 56%, 26%);   
+    color: hsl(243, 100%, 93%);
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    transform: translateY(55%);
+}
+progress {
+    width: 80%;
+    height: 18px;
+    border-radius: 50px;
+    margin: 10px auto;
+    -webkit-appearance: none;
+}
+::-webkit-progress-value {
+    background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    height: 16px;
+    border-radius: 50px;
+}
+::-webkit-progress-bar {
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 50px;
+}
+#white-point {
+    width: 15px;
+    height: 14px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    top: -27px;
+    left: 207px;
+}
+#zero {
+    position: relative;
+    top: -15px;
+    left: -35%;
+}
+#thousand {
+    position: relative;
+    top: -30px;
+    left: 35%;
+}
+#white-square {
+    width: 55%;
+    height: 50px;
+    margin: 0 auto;
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-size: 14px;
+    padding: 5% 0;
+    border-radius: 5px;    
+}
+
+@media only screen and (min-width: 375px) {
+    .container {
+        background-color: hsl(229, 57%, 11%);
+        background-image: url(images/bg-desktop.svg);
+        background-size: 100% 50%;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } 
+    #top-content {
+        margin: 0;
+        margin-right: 10px;
+        transform: translateY(0%);
+    }
+    #bottom-content {
+        margin: 0;
+        width: 500px;
+        height: 95px;
+        transform: translateY(25%);
+    }
+    #prog-text {
+        position: relative;
+        left: -85px;
+    }
+    #white-point {
+        left: 335px;
+    }
+    #white-square {
+        height: 30px;
+        width: 30%;
+        position: relative;
+        top: -200px;
+        left: 125px;
+    }
+    #triangle {
+        width: 0;
+        height: 0;
+        border-top: 25px solid white;
+        border-left: 25px solid transparent;
+        position: relative;
+        top: -205px;
+        left: 425px;
+    }
+}
